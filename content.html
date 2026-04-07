@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content | Smart Choices, Safe Futures</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="icon" type="image/svg+xml" href="assets/logo-light.svg" id="favicon">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="scanline"></div>
+
+    <nav>
+        <div class="brand">
+            <img src="assets/logo-light.svg" alt="Smart Choices Logo" id="brand-logo">
+            <span>SMART CHOICES<br><small style="color:var(--accent-cyan); font-size:1rem; letter-spacing: 4px;">SAFE FUTURES</small></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="content.html">Content</a>
+            <a href="authors.html">Authors</a>
+            <button id="theme-toggle" class="btn-primary" style="padding: 5px 15px; font-size: 1rem; clip-path: none; border-radius: 5px;">Dark Mode</button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Content</h1>
+            <p>Access tactical briefings on contraceptive methods, effectiveness, and emergency protocols.</p>
+        </div>
+    </header>
+
+    <div class="content-layout container">
+        <!-- Sticky TOC -->
+        <aside class="toc">
+            <h3>/// Index</h3>
+            <ul id="toc-list">
+                <li><a href="#sec-a">A. Overview & Physiology</a></li>
+                <li><a href="#sec-b">B. Barrier Methods</a></li>
+                <li><a href="#sec-c">C. Hormonal Methods</a></li>
+                <li><a href="#sec-d">D. Long-Acting Reversible (LARC)</a></li>
+                <li><a href="#sec-e">E. Permanent Methods</a></li>
+                <li><a href="#sec-f">F. Emergency Protocols</a></li>
+                <li><a href="#sec-g">G. Myths vs Facts</a></li>
+                <li><a href="#sec-h">H. Infographics</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content-sections">
+
+            <!-- Section A: Overview -->
+            <section id="sec-a" class="content-sec color-a">
+                <h2>A. Overview & Physiology</h2>
+                <p>Contraception is the tactical deployment of methods or devices to prevent pregnancy. Understanding the biological terrain is step one in effective risk management.</p>
+                <div class="info-panel">
+                    <h4>The Menstrual Cycle</h4>
+                    <p>On average, a cycle lasts 28 days. Ovulation typically occurs around day 14. This is the window of highest risk for unintended pregnancy.</p>
+                </div>
+            </section>
+
+            <!-- Section B: Barrier Methods -->
+            <section id="sec-b" class="content-sec color-b">
+                <h2>B. Barrier Methods</h2>
+                <p>Physical defenses designed to prevent sperm from reaching the egg. They represent the primary frontline defense against Sexually Transmitted Infections (STIs).</p>
+                
+                <!-- Accordions -->
+                <div class="accordion">
+                    <div class="acc-header">Male Condoms <span class="acc-icon">+</span></div>
+                    <div class="acc-body">
+                        <p><strong>Effectiveness:</strong> 85% (Typical Use) - 98% (Perfect Use)</p>
+                        <p><strong>Pros:</strong> Protects against STIs, easily accessible, no hormones.</p>
+                        <p><strong>Cons:</strong> Requires discipline before every deployment, risk of breakage.</p>
+                        <div class="eff-bar-wrap">
+                            <div class="eff-label">Perfect Use</div>
+                            <div class="eff-bar"><div class="eff-fill" data-width="98%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="acc-header">Female Condoms <span class="acc-icon">+</span></div>
+                    <div class="acc-body">
+                        <p><strong>Effectiveness:</strong> 79% (Typical) - 95% (Perfect)</p>
+                        <p>Can be inserted hours prior, providing STI protection and autonomy.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section C: Hormonal -->
+            <section id="sec-c" class="content-sec color-c">
+                <h2>C. Hormonal Methods</h2>
+                <p>Chemical regulation of ovulation. These methods manipulate the biological environment to prevent egg release.</p>
+                
+                <!-- Tabs -->
+                <div class="tabs">
+                    <div class="tab-headers">
+                        <button class="tab-btn active" data-tab="tab-pill">The Pill</button>
+                        <button class="tab-btn" data-tab="tab-patch">The Patch</button>
+                        <button class="tab-btn" data-tab="tab-ring">The Ring</button>
+                    </div>
+                    <div class="tab-content active" id="tab-pill">
+                        <h4>Oral Contraceptives</h4>
+                        <p>Requires daily administration at the exact same time. Highly effective when discipline is maintained (99% perfect use).</p>
+                    </div>
+                    <div class="tab-content" id="tab-patch">
+                        <h4>Transdermal Patch</h4>
+                        <p>Applied to the skin, releasing hormones continuously. Replaced weekly for three weeks, followed by a patch-free week.</p>
+                    </div>
+                    <div class="tab-content" id="tab-ring">
+                        <h4>Vaginal Ring</h4>
+                        <p>Flexible ring inserted for three weeks. Self-administered and highly effective.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section D: LARC -->
+            <section id="sec-d" class="content-sec color-d">
+                <h2>D. Long-Acting Reversible (LARC)</h2>
+                <p>Set-and-forget protocols. These provide the highest tier of defense with the lowest requirement for user discipline.</p>
+                <div class="grid-2">
+                    <div class="card card-dark">
+                        <h4>IUD (Intrauterine Device)</h4>
+                        <p>Effective for 3 to 10 years depending on the type (Hormonal or Copper). Effectiveness: >99%.</p>
+                    </div>
+                    <div class="card card-dark">
+                        <h4>The Implant</h4>
+                        <p>A small rod inserted under the arm skin. Effective for up to 3 years. Effectiveness: >99%.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section G: Myths vs Facts -->
+            <section id="sec-g" class="content-sec color-g">
+                <h2>G. Myths vs Facts</h2>
+                <div class="flip-grid">
+                    <div class="flip-card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <h3>MYTH</h3>
+                                <p>You can't get pregnant the first time.</p>
+                            </div>
+                            <div class="flip-back">
+                                <h3>FACT</h3>
+                                <p>Pregnancy can occur any time ovulation happens and sperm is present, regardless of experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-inner">
+                            <div class="flip-front">
+                                <h3>MYTH</h3>
+                                <p>Withdrawal (pulling out) is highly effective.</p>
+                            </div>
+                            <div class="flip-back">
+                                <h3>FACT</h3>
+                                <p>Pre-ejaculate can carry sperm. Typical use effectiveness is only around 78%.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section H: Infographics -->
+            <section id="sec-h" class="content-sec color-b">
+                <h2>H. Visual Intelligences</h2>
+                <div class="infographics-grid">
+                    <img src="assets/Page%201.png" alt="Awareness Infographic Page 1" class="lightbox-trigger">
+                    <img src="assets/Page%202.png" alt="Awareness Infographic Page 2" class="lightbox-trigger">
+                </div>
+            </section>
+
+            <!-- Section F: Emergency -->
+            <section id="sec-f" class="content-sec color-emergency">
+                <h2>Emergency Protocols</h2>
+                <div class="emergency-box">
+                    <h3>ACTION REQUIRED: Post-Exposure Defense</h3>
+                    <p>If primary defenses fail, emergency contraception (Plan B, Copper IUD) can be deployed.</p>
+                    <ul>
+                        <li><strong>Morning-After Pill:</strong> Most effective within 72 hours. Delays ovulation.</li>
+                        <li><strong>Copper IUD:</strong> Can be inserted up to 5 days after unprotected sex. 99% effective as emergency contraception.</li>
+                    </ul>
+                    <a href="#" class="btn-primary" style="margin-top: 20px;">Locate Nearest Clinic</a>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Contraceptive Awareness Initiative. All systems operational.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
