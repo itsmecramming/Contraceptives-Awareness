@@ -168,4 +168,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --- Hamburger Menu Toggle ---
+  const hamburger = document.getElementById('hamburger');
+  const navLinksContainer = document.getElementById('nav-links');
+
+  if (hamburger && navLinksContainer) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinksContainer.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    const mobileLinks = navLinksContainer.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinksContainer.classList.remove('active');
+      });
+    });
+  }
+
 });
